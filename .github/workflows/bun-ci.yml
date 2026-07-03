@@ -6,11 +6,11 @@ concurrency:
 
 on:
   push:
-分支: [main]
+branches: [main]
     paths-ignore:
       - "*.md"
   pull_request:
-分支: [main]
+branches: [main]
     paths-ignore:
       - "*.md"
 
