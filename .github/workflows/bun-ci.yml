@@ -6,11 +6,11 @@ concurrency:
 
 on:
   push:
-    branches: [main]
+分支: [main]
     paths-ignore:
       - "*.md"
   pull_request:
-    branches: [main]
+分支: [main]
     paths-ignore:
       - "*.md"
 
@@ -19,7 +19,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ windows-latest]
 
     steps:
       - name: Checkout repository
